@@ -1,0 +1,56 @@
+p {
+    color: #0d0d0d;
+    text-align: center;
+}
+
+section {
+
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.area {
+    width: 100%;
+
+    text-align: center;
+    flex-basis: 25rem;
+}
+
+.area1 {
+
+    flex-grow: 1;
+
+}
+
+.area2 {
+
+    flex-grow: 2;
+
+}
+
+.area3 {
+
+    flex-grow: 1;
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+img.first:hover {
+    opacity: 0;
+}
+
+
+footer {
+    text-align: center;
+}

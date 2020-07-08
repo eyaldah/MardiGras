@@ -1,0 +1,50 @@
+body,
+p,
+h1,
+header {
+    color: #0d0d0d;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    max-width: 100;
+    height: auto;
+}
+
+section {
+
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.area {
+    width: 100%;
+    color: #f2f2f2;
+    text-align: center;
+    flex-basis: 25rem;
+}
+
+.area1,
+.area3 {
+
+    flex-grow: 1;
+
+}
+
+.area2 {
+
+    flex-grow: 2;
+
+}
+
+@media(max-width:600px) {
+    img {
+        max-width: 100;
+        height: auto;
+    }
+}

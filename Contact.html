@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto&display=swap" rel="stylesheet">
+    <title>contact</title>
+
+    <!---nav css/page css!-->
+
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="stylesheet" href="css/contact.css">
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 d-lg-block">
+
+
+
+
+                <div class="topnav" id="myTopnav">
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="Media.html">Media</a>
+                    <a href="Faq.html">FAQ</a>
+                    <a href="Contact.html" class="active">Contact Us</a>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i> &#9776 </i>
+                    </a>
+                </div>
+                <br>
+                <br>
+
+
+
+
+
+                <header>
+                    <h1>leave Your information to Recieve Our Newsletter!</h1>
+                    <br>
+                </header>
+                <br>
+                <br>
+                <div class="d-flex">
+                    <section>
+
+                        <form action="">
+                            <!--tilz=dissapear title on small device//
+                            placeholder appears small devices css(opacity)---->
+                            <label for=""> <span class="titlz">Name: </span></label>
+                            <input type="text" id="name" placeholder="Enter your First Name">
+
+
+                            <br>
+                            <label for=""> <span class="titlz">
+
+                                    Last Name: </span> </label>
+                            <input type="text" id="lname" placeholder="Enter your Last Name">
+                            <br>
+
+                            <label for=""> <span class="titlz">
+
+                                    Email </span> </label>
+                            <input type="text" id="email" placeholder="Enter your Email Address">
+                            <br>
+                            <label for=""> <span class="titlz">
+
+                                    Favorite Thing About Mardi Gras:
+                                </span>
+
+                            </label>
+                            <br>
+
+                            <textarea name="" id="mardil" id="" cols="30" rows="10"
+                                placeholder="Enter Your Favorite Thing About Mardi Gras"></textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+
+
+
+
+
+                        </form>
+
+                    </section>
+                </div>
+
+                <footer>
+                    <div class="copy">&copy;This Site Was Created By Eyal Dahan</div>
+                </footer>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!------js=form///js=nav bar--->
+    <script>
+        document.querySelector("input[type='submit']").addEventListener('click', cntx);
+
+        function cntx() {
+            let namefr = document.querySelector("#name");
+            let namela = document.querySelector("#lname");
+            let mailz = document.querySelector("#email");
+            let txto = document.querySelector("#mardil");
+
+
+
+            if (namefr.value == "") {
+                alert("Enter Name please");
+
+
+
+            }
+            if (namela.value == "") {
+                alert("Enter Last Name please");
+            }
+            if (mailz.value == "" || mailz.value.indexOf("@") == -1 || mailz.value.indexOf(".") == -1) {
+                alert("Not A Valid Email");
+            }
+            if (txto.value == "") {
+                alert("Enter Favorite Thing About Mardi Gras!");
+            }
+
+
+
+
+        }
+
+
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body {
+  background-color: #8cbf3f;
+}
+
+header,
+h1 {
+  text-decoration-style: none;
+
+  color: #f2cc0f;
+}
+
+h1:hover {
+  color: #9453a6;
+}
+
+form,
+.copy {
+  color: #0d0d0d;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.copy {
+  text-align: center;
+  letter-spacing: 2px;
+}
+::placeholder {
+  opacity: 0;
+}
+
+.titlz {
+  visibility: visible;
+}
+
+@media (max-width: 576px) {
+  ::placeholder {
+    opacity: 1;
+  }
+  .titlz {
+    visibility: hidden;
+  }
+}

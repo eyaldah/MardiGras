@@ -1,0 +1,49 @@
+body {
+    background-color: #f2cc0f;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+a:link {
+    font-size: 30pt;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0d0d0d;
+}
+
+.location {
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+p {
+
+
+    font-size: 19px;
+}
+
+h1,
+footer {
+
+    text-align: center;
+}
+
+.box {
+    flex-basis: 200px;
+}
+
+.box1,
+.box2,
+.box3 {
+    flex-grow: 1;
+}

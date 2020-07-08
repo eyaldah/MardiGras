@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS+googlefonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto&display=swap" rel="stylesheet">
+
+    <!---nav css link/page css link-->
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="stylesheet" href="css/nav.css">
+
+
+    <title>Media</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+
+
+
+                <!-- nav Bar-->
+                <div class="topnav" id="myTopnav">
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="Media.html" class="active">Media</a>
+                    <a href="Faq.html">FAQ</a>
+                    <a href="Contact.html">Contact Us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i> &#9776 </i>
+                    </a>
+                </div>
+
+
+                <!--lightbox  gallery->
+                  <!-Images for lightbox (small photo)-->
+                <div class="row">
+                    <div class="column-3">
+                        <img src="images/mediaPage/masksMore.jpg" class="response" onclick="openModal();currentSlide(1)"
+                            class="hover-shadow">
+                    </div>
+                    <br>
+                    <div class="column-3">
+                        <img src="images/mediaPage/funsmall.jpg" class="response" onclick="openModal();currentSlide(2)"
+                            class="hover-shadow">
+                    </div>
+                    <div class="column-3">
+                        <img src="images/mediaPage/2pplMasks.jpg" class="response" style="width:500px;height:350px;"
+                            onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column-3">
+                        <img src="images/mediaPage/mask.jpg" class="response" style="width:500px;height:350px;" onclick="
+                            openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+
+
+                    <div class="column-3">
+                        <img src="images/mediaPage/celebraters.jpg" class="response" style="width:500px;height:350px;"
+                            onclick="
+                            openModal();currentSlide(5)" class="hover-shadow">
+                    </div>
+                    <div class="column-3">
+                        <img src="images/mediaPage/womenl.jpg" class="response" style="width:500px;height:350px;"
+                            onclick="
+                            openModal();currentSlide(6)" class="hover-shadow">
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <!-- The Lightbox (big photos) -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="images/mediaPage/masksMore.jpg" class="response" style="width:100%" alt="maskers">
+
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="images/mediaPage/funbig.jpg" class="response" style="width:100%"
+                                alt="People celebrating">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="images/mediaPage/2pplMasks.jpg" class="response" style="width:100%"
+                                alt="Celebraters with masks">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="images/mediaPage/mask.jpg" class="response" style="width:100%" alt="A mask">
+                        </div>
+
+
+                        <div class="mySlides">
+                            <div class="numbertext">5/ 6</div>
+                            <img src="images/mediaPage/celebraters.jpg" class="response" style="width:100%"
+                                alt="Celbraters">
+
+                        </div>
+
+
+
+                        <div class="mySlides">
+                            <div class="numbertext">6/6 </div>
+                            <img src="images/mediaPage/womenl.jpg" style="width:100%" alt="girl on a beach">
+
+                        </div>
+
+                        <!-- Next/ last controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption">
+
+                            </p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column-3">
+                            <img class="demo" src="" onclick="currentSlide(1)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="" onclick="currentSlide(2)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="" onclick="currentSlide(3)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="" onclick="currentSlide(4)" alt="">
+                        </div>
+
+
+
+
+                        <div class="column">
+                            <img class="demo" src="" onclick="currentSlide(5)" alt="">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="" onclick="currentSlide(6)" alt="">
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <br>
+                <!-- Videos -->
+                <aside>
+                    <div class="frmz">
+                        <iframe width="460" height="315" src="https://www.youtube.com/embed/EkIZwXbSh-Y" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+
+
+                        <iframe width="460" height="315" src="https://www.youtube.com/embed/hzj1Hwa_6A8" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <iframe width="460" height="315" src="https://www.youtube.com/embed/cT5vnPybf3Y" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="460" height="315" src="https://www.youtube.com/embed/9Bv1mFl9SI4" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="460" height="315" src="https://www.youtube.com/embed/13j5RM9jocQ" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="460" height="315" src="https://www.youtube.com/embed/quyHJODhyvo" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+
+
+
+
+
+                </aside>
+                <footer>
+                    <div class="copy">&copy;This Site Was Created By Eyal Dahan</div>
+                </footer>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        // Open the lightbox
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the lightbox
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/last controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // small image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        // nav js
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

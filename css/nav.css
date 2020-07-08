@@ -1,0 +1,116 @@
+/* iDentical through pages nav css*/
+
+/* bgc nav js */
+.topnav {
+    background-color: #0d0d0d;
+    overflow: hidden;
+}
+
+/* Style links in nav bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-family: 'Henny Penny', cursive;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change  colors  on hover */
+.topnav a:hover {
+    background-color: #9453a6;
+    color: #0d0d0d;
+}
+
+/* an active class to highlight the current page */
+.topnav a.active {
+    background-color: #8cbf3f;
+    color: #f2f2f2;
+}
+
+/* Hide the link that should opens/ closes nav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+/* CSS FOR NAV END */
+
+
+/* General*/
+header,
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Henny Penny', cursive;
+}
+
+.copy {
+
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+p {
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
+
+/* When the screen is less than 576 pixels wide, hide all links, and put "burger"*/
+@media screen and (max-width: 576px) {
+
+    body,
+    img {
+        max-width: 100%;
+    }
+
+
+
+
+    .topnav a:not(:last-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: left;
+        display: block;
+
+    }
+
+
+
+
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+
+        text-align: left;
+
+    }
+
+
+}
